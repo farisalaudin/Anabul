@@ -1,19 +1,16 @@
 public class kucing {
-    // Fields (Properties/Attributes)
-    private String nama;
-    private String warna;
-    private int umur;
-    private boolean lapar;
+    public String nama;
+    public String warna;
+    public int umur;
+    public boolean lapar;
 
-    // Constructor
     public kucing(String nama, String warna, int umur) {
         this.nama = nama;
         this.warna = warna;
         this.umur = umur;
-        this.lapar = true; // By default, the cat is hungry
+        this.lapar = true;
     }
 
-    // Methods (Behaviors)
     public void meow() {
         System.out.println(nama + " says: stardenburdenhardenbart!");
     }
@@ -35,7 +32,6 @@ public class kucing {
         System.out.println("Lapar: " + (lapar ? "meong" : "meow"));
     }
 
-    // Main method to test the Kucing class
     public static void main(String[] args) {
         // Create a Kucing object
         kucing myCat = new kucing("Muhammad sumbul", "pelangi", 3);
@@ -45,6 +41,6 @@ public class kucing {
         myCat.meow();
         myCat.makan("wiskas");
         myCat.tidur();
-        myCat.info(); // Display updated info after actions
+        myCat.info();
     }
 }
